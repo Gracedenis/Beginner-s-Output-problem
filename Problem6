@@ -14,3 +14,23 @@ else:
     print("No, it is not a triangle.")
 
 
+
+def say_Good_morning_(name):
+    print("Good morning,{}".format(name))
+def say_Good_afternoon_(name):
+    print("Good afternoon,{}".format(name))
+def say_Good_evening_(name):
+    print("Good evening,{}".format(name))
+name = input("What's your name:")
+time = int(input("What time is it now"))
+
+if 0 <= time <= 12:
+    say_Good_morning_(name)
+elif 13 <= time <= 17:
+    say_Good_afternoon_(name)
+elif 18 < time <= 23:
+    say_Good_evening_(name)
+else:
+    print("invalid time input")
+
+
